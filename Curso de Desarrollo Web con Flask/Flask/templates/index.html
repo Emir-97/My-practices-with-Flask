@@ -1,0 +1,13 @@
+{% if sent %}
+
+<p>Hello {{ name }}, The form has been sent</p>
+
+{% else %}
+ <p>Hello {{ name }}, the form has not been sent </p>
+{% endif %}
+
+<form  method="post">
+  {{ form.hidden_tag() }}
+  {{ form.name.label }}  {{ form.name }}
+  {{ form.submit }}
+</form>

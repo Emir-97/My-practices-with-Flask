@@ -1,0 +1,12 @@
+{% extends 'basic.html' %}
+
+{% block block1 %}
+ <h2>Enter your data</h2>
+ <form  action="{{ url_for('greeting') }}" >
+  Name: <input type="text" name="name" required>
+  <br>
+  Lastname: <input type="text" name="lastname" required>
+  <br>
+  Submit: <input type="submit" name="submit">
+ </form>
+{% endblock %}

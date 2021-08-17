@@ -1,0 +1,17 @@
+ESTOS COMANDOS SE DEBEN DE REALIZAR CON EL SIGUIENTE ORDEN PARA PROCEDER 
+CON LAS ACTUALIZACIONES DE LA TABLAS:
+
+ *Primero instalar el paquete flask migrate al simbolo de sistema
+  pip install flask_migrate
+
+ *Segundo establecer los cambios del documento donde se aloja con flask app
+  set FLASK_APP=example7.py
+
+ *Tercero dar inicio de la base de datos
+  flask db init
+
+ *Cuarto producir la migración de la actualización
+  flask db migrate
+
+ *Último paso actualizar la base de datos
+  flask db upgrade

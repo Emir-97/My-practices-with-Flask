@@ -1,0 +1,15 @@
+<h3>Input your data</h3>
+<form   method="post">
+  {{ form.hidden_tag() }}
+  {{ form.name.label }} {{ form.name }}
+  <br>
+  {{ form.age.label }} {{ form.age }}
+  <br>
+  {{ form.sex.label }} {{ form.sex }}
+  <br>
+  {{ form.color.label }} {{ form.color }}
+  <br>
+ Comment {{ form.comment }} 
+  <br>
+  {{ form.button }}
+</form>

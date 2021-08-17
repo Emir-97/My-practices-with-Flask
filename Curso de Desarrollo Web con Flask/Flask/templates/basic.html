@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Our website</title>
+  </head>
+  <body>
+    <div>
+      <a href="{{ url_for('part1') }}">Page 1</a>
+      <a href="{{ url_for('part2') }}">Page 2</a>
+      <a href="{{ url_for('static', filename='oso.jpg') }}">Bear Picture</a>
+    </div>
+    <br>
+    <hr>
+    <br>
+    {% block block1 %}
+
+    {% endblock %}
+    <br>
+    <hr>
+    <br>
+    <h5>This is the footer</h5>
+  </body>
+</html>
